@@ -4,11 +4,8 @@ import React from 'react';
 const VideoCard = () => {
   return (
     <div className="col-md-8 col-lg-9 vstack gap-4">
-      {}
       <div className="card">
-        {}
         <div className="card-body">
-          {}
           <iframe
             className="rounded w-100"
             height="450"
@@ -17,21 +14,16 @@ const VideoCard = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen=""
           ></iframe>
-          {}
           <div className="d-flex my-3">
-            {}
             <div>
               <h1 className="h4"> What's it like to work at Google? </h1>
               <div className="d-flex">
-                {}
                 <div className="avatar avatar-xxs me-2">
                   <img
                     className="avatar-img rounded-circle"
                     src="https://yt3.ggpht.com/ytc/AIf8zZSyX1SK7mK3yTq6z8O_5juKW03gDJWXewOckJDIX9g=s48-c-k-c0x00ffffff-no-rj"
-                    alt=""
                   />
                 </div>
-                {}
                 <div className="aContiner">
                 <div className="Comment">Frances Guerrero<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 64 64"><circle cx="32" cy="32" r="30" fill="#4bd37b"/><path fill="#fff" d="M46 14L25 35.6l-7-7.2l-7 7.2L25 50l28-28.8z"/></svg></div>
                   </div>
