@@ -3,6 +3,7 @@ import SearchButton from "./SearchButton";
 import SettingsButton from "./SettingsButton";
 import NotificationButton from "./NotificationButton";
 import Profile from './Profile';
+import ProfilePic from "D:/Courses/WEB 1/Project/GitHub repository/web1_project/web1-project-team-23/src/Components/ProfilePic"
 import "./NavBarStyle.css";
 const NavBar = () =>
 {
@@ -37,9 +38,9 @@ const NavBar = () =>
                     </ul>
                     <div className='ms-auto'>
                         <SettingsButton/>
-                        <NotificationButton/>
-                        
-                    </div>
+                        <NotificationButton/>                        
+                    </div> 
+                    <ProfilePic/>
                     <Profile/>
                 </div>
                 
