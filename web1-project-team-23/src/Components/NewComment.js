@@ -8,8 +8,7 @@ const NewComment = () =>{
                     <form class="position-relative w-100">
                         <textarea class="one form-control pe-4 bg-light" rows="1" placeholder="Add a comment..."></textarea>
                     </form>
-                </div>
-        
+                </div>        
             </div>
             </>
     );
