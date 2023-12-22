@@ -8,9 +8,10 @@ function App() {
   return (
     <>
       <NavBar />
-      <NewComment/>
+      
      {/*  <VideoCard/> */}
       <VideoTest/>
+      <NewComment/>
       <Footer/>
     </>
   );
