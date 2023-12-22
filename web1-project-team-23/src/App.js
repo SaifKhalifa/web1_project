@@ -6,6 +6,8 @@ import NavBar from "./Components/NavBar/NavBar";
 import NewComment from './Components/Main Video Card/NewComment';
 import VideoCard from './Components/Main Video Card/VideoCard';
 import VideoTest from "./Components/Main Video Card/VideoTest";
+import Offical_section from './Components/SectionOffical';
+import Music_section from './components/SectionMusic';
 function App() {
   return (
     <>
@@ -17,7 +19,8 @@ function App() {
       
       <Header/>
       <Card/>
-
+      <Offical_section />
+      <Music_section/>
       <Footer/>
     </>
     
