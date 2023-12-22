@@ -1,11 +1,13 @@
 import React from "react";
 import "./VideoVard.css"
-const VideoCard = ({ link,title,photo,name , views }) => {
+const VideoCard = ({ time,link,title,photo,name , views }) => {
   return (
     <>
     <div className="card" >
-
-    <iframe src={link} title="YouTube video" allowfullscreen=""style={{ width: "125px", height: "140px" }}></iframe>    
+    <div className="video" data-duration={time}>
+    <div className="like"></div>
+    <iframe src={link} title="YouTube video" allowfullscreen=""style={{ width: "125px", height: "140px" }}></iframe>  
+    </div>
     <div className="d-flex align-items-center">
         <h5 className="card-title">{title} </h5>
           </div>
