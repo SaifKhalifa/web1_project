@@ -1,5 +1,4 @@
-
-
+import MusicCard from "./components/Music";
 
 import View from './components/viewVideos';
 import MusicCard from './components/Music';
