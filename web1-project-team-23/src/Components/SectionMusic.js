@@ -1,6 +1,4 @@
-import "./Mmusic.css"
- import MusicCard from "./Music"
- import View from "./viewVideos" 
+import MusicCard from "./Music" 
 function Music_section () {
 return (
     <>
