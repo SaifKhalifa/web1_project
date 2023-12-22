@@ -12,7 +12,7 @@ const VideoTest = () =>{
                                     <img className="avatar-img rounded-circle" src="https://yt3.ggpht.com/ytc/AIf8zZSyX1SK7mK3yTq6z8O_5juKW03gDJWXewOckJDIX9g=s48-c-k-c0x00ffffff-no-rj" alt="" />
                                 </div>
                                 <div className="d-none d-xl-block">
-                                    <span className="h6 stretched-link">Frances Guerrero</span> 
+                                    <span className="h6">Frances Guerrero</span> 
                                 </div>
                                 {/* <i className="bi bi-patch-check-fill text-success small" /> */}                         
                             </div>
