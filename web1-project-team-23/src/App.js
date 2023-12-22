@@ -1,15 +1,17 @@
-
 import './App.css';
-import Baner from './Components/Baner';
-
+import Card from './components/card/Card';
+import Header from './components/header/Headr'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-       
-       <Baner/>
-      </header>
-    </div>
+    
+    <>
+<Header/>
+
+ <Card/>
+
+
+    </>
+  
   );
 }
 
