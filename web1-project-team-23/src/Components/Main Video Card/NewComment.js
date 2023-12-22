@@ -1,4 +1,4 @@
-import ProfilePic from "./ProfilePic"
+import ProfilePic from "../ProfilePic"
 const NewComment = () =>{
     return(
         <>
@@ -6,11 +6,11 @@ const NewComment = () =>{
                 <ProfilePic/>
                 <div>
                     <form class="position-relative w-100">
-                        <textarea class="one form-control pe-4 bg-light" rows="1" placeholder="Add a comment..."></textarea>
+                        <textarea class="form-control pe-4 ms-3 bg-light" rows="1" placeholder="Add a comment..."></textarea>
                     </form>
                 </div>        
             </div>
-            </>
+        </>
     );
 }
 

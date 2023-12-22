@@ -1,4 +1,3 @@
-import "./NavBarStyle.css";
 const Profile = () =>{
     return(
         <>            
