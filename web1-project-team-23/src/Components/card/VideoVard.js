@@ -5,7 +5,7 @@ const VideoCard = ({ link,title,photo,name , views }) => {
     <>
     <div className="card" >
 
-    <iframe src={link} title="YouTube video" allowfullscreen=""style={{ width: "125px", height: "140px" }}></iframe> 
+    <iframe src={link} title="YouTube video" allowfullscreen=""style={{ width: "125px", height: "140px" }}></iframe>    
     <div className="d-flex align-items-center">
         <h5 className="card-title">{title} </h5>
           </div>
