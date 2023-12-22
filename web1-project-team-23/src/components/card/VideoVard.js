@@ -1,27 +1,33 @@
 import React from "react";
 import "./VideoVard.css"
-const VideoCard = ({ link,title,photo,name , views }) => {
+const VideoCard = ({ time,link,title,photo,name , views }) => {
   return (
     <>
     <div className="card" >
-    <iframe src={link} title="YouTube video" allowfullscreen=""></iframe> 
-    <br />
-        <h5 className="card-title">{title}</h5>
-        <p className="card-text">
-          <br />
-        <div className="d-flex mt-3">
-  <div className="avatar avatar-xxs me-2">
+    <div className="video" data-duration={time}>
+    <div className="like"></div>
+    <iframe src={link} title="YouTube video" allowfullscreen=""style={{ width: "125px", height: "140px" }}></iframe>  
+    </div>
+    <div className="d-flex align-items-center">
+        <h5 className="card-title">{title} </h5>
+          </div>
+          <div className="row">
+            <div className="Col">
+    <p className="card-text" >
+        <div className="d-flex  mt-0 mb-5">
+  <div className="avatar avatar-sm "style={{ width: "20px", height: "20px",marginRight : "0.50rem"}}>
     <img className="avatar-img rounded-circle" src={photo} alt />
   </div>
-  <div>
-    <h6 className="mb-0 lh-1"> <a href="#!"> {name} <i className="bi bi-patch-check-fill text-success small" /> </a> </h6>
-    <span className="ms-auto small"> {views}</span>
-  </div>
+  <div className="d-flex flex-column">
+    <h6 className=" mb-0 small font-weight-bold"> <a href="#!"className="text-muted" style={{ fontSize: "8px" }}> {name} <i className="bi bi-patch-check-fill text-success small" /> </a> </h6>
+    <span className="ms-1 small text-muted "style={{ fontSize: "7px"}}> {views}</span>
+</div>
 </div>
       </p>
-        
       </div>
-=
+        </div>
+        </div>
+      
     </>
     
   );

@@ -1,16 +1,46 @@
 .card{
-    width: 15rem;
-    height: 20rem;
+    width: 10rem;
+    height: 13.4rem;
 }
-.h5{
-    font-size: 2rem;
+.card-title{
+
+    font-size: 0.7rem;
 
 }
-.avatar-xxs {
-    width: 4rem; 
-    height: 4rem; 
-  }
+
 
 .rounded-circle {
-    border-radius: 10% ;
+    border-radius: 5% ;
 }
+.card-text{
+    margin-bottom: 3px;
+    margin-top:7px ;
+    margin-left: 1px;
+    margin-right: 5px;
+}
+.video::before {
+    content: attr(data-duration);
+    position: absolute;
+    background-color: rgba(10, 10, 10, 0.575);
+    color: white;
+   margin-left: 2px;
+    bottom: 75px;
+    padding: .1em .3em;
+    border-radius: .3em;
+    font-size: .5rem;
+   
+  }
+  
+  .like::before{
+    
+      content: '❤';
+      position: absolute;
+      background-color: rgba(10, 10, 10, 0.575);
+      color: white;
+      right: 10px;
+      bottom:75px;
+      padding: .1em .3em;
+      border-radius: .3em;
+      font-size: 0.5em;
+    margin-right:2px ;
+  }
