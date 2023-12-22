@@ -31,7 +31,7 @@ function Header() {
                 <p class="text-white">Suspicion neglected he resolving agreement perceived at an. </p>
                 </div>
                 <div className="d-flex justify-content-between pt-1 pb-1">
-                <a class="btn btn-primary stretched-link" href=" "> <i class="bi bi-file-earmark-play pe-1"></i>Watch now</a>
+                <a class="btn btn-primary stretched-link" href=" "><i class="bi bi-file-earmark-play"></i> Watch now</a>
                  </div>
             </div>
          </div>
