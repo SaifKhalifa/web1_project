@@ -1,11 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-import VideoCard from './Components/VideoCard'
+import Avatar from './Components/Avatar';
+import MainVideo from './Components/MainVideo';
+import RelatedVideos from './Components/RelatedVideos';
 function App() {
   return (
     <>
     
-    <VideoCard/>
+    <Avatar/>
+    <MainVideo/>
+    <RelatedVideos/>
     </>
   );
 }
