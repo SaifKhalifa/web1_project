@@ -3,12 +3,12 @@ import SearchButton from "./SearchButton";
 import SettingsButton from "./SettingsButton";
 import NotificationButton from "./NotificationButton";
 import Profile from './Profile';
-import ProfilePic from "D:/Courses/WEB 1/Project/GitHub repository/web1_project/web1-project-team-23/src/Components/ProfilePic"
+import ProfilePic from "D:/Programming/Web/test-react/src/Component/ProfilePic.js"
 import "./NavBarStyle.css";
 const NavBar = () =>
 {
     return(
-        <nav className="navbar navbar-expand-lg" style={{backgroundColor: "white"}}>
+        <nav className="navbar navbar-expand-lg sticky-top" style={{backgroundColor: "white"}}>
             
             <div className="container-fluid">
                 <LogoButton/>
