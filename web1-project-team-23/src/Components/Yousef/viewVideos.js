@@ -1,6 +1,6 @@
 // View.js
 import "./Mmusic.css";
-import OfficalTrue from "./OfficalCard";
+import OfficialCard from "./OfficalCard";
 import { useState } from 'react';
 
 const View = () => {
@@ -23,18 +23,16 @@ const View = () => {
       </div>
 
       {showComponents && (
-        // Apply flexbox styling to display components side by side
+        
         <div className="container">
-          {/* Your components go here */}
-          <div className="card">
-            <OfficalTrue title="new video 1" name="Lori ferguson" views="143.5k views" src="https://www.youtube.com/embed/_g4BiBcYdZQ?si=fGuQowZF4gj7yx3l" />
+          {
+            <div className="card">
+            <OfficialCard title="new video 1" name="Lori ferguson" views="143.5k views" src="https://www.youtube.com/embed/_g4BiBcYdZQ?si=fGuQowZF4gj7yx3l"/>
+            
           </div>
-          <div className="card">
-            <OfficalTrue title="new video 2" name="Lori ferguson" views="143.5k views" src="https://www.youtube.com/embed/_g4BiBcYdZQ?si=fGuQowZF4gj7yx3l" />
-          </div>
-          <div className="card">
-            <OfficalTrue title="new video 3" name="Lori ferguson" views="143.5k views" src="https://www.youtube.com/embed/_g4BiBcYdZQ?si=fGuQowZF4gj7yx3l" />
-          </div>
+          }
+          
+          
         </div>
       )}
     </div>
