@@ -1,6 +1,6 @@
 import OfficialCard from "./OfficalCard";
 import View from "./viewVideos";
-import db from "../Firebase/Firebase";
+import db from "../../Firebase/Firebase";
 import { getDocs, collection} from "firebase/firestore"
 import { useState, useEffect } from 'react';
 
@@ -48,3 +48,5 @@ function OfficalSection () {
 ); 
 }
 export default OfficalSection; 
+
+
