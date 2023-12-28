@@ -1,24 +1,50 @@
-
-
-import OfficalTrue from "./OfficalCard";
-import OfficalNoTrue from "./Officalonly";
+import OfficialCard from "./OfficalCard";
 import View from "./viewVideos";
+import db from "../Firebase/Firebase";
+import { getDocs, collection} from "firebase/firestore"
+import { useState, useEffect } from 'react';
 
+async function fetchDataFromFirestore(collectionName)
+{
+    const querySnapshot = await getDocs( collection(db, collectionName) );
+    const data = [];
+    querySnapshot.forEach(
+        (doc) => {
+            data.push( {id: doc.id, ...doc.data()} );
+        }
+    );
+    return data;
+}
 
-function Offical_section () {
-    
+function OfficalSection () {  
+    const [video_users_Data, set_video_users_data] = useState([]);
+
+    useEffect(() => {
+        async function fetchUserData() {
+            const videoInfo = await fetchDataFromFirestore("offical");      
+            set_video_users_data(videoInfo);             
+        }
+        fetchUserData();
+    }, []);
+
     return (
         <>
-        <div className="section-title"> Offical Trailer </div>
-        <View />
-        <div className="section">
-            
-            <OfficalNoTrue  title="New Movies for 2024"    name="Yousef Shabib"   views="250.4k views"   src="https://www.youtube.com/embed/tbuZXvNrXYM?si=PQjNLAReCThpL7m7"  />
-            <OfficalTrue title="Create app mobile by AI" name="Lori ferguson"   views="143.5k views"  src="https://www.youtube.com/embed/_g4BiBcYdZQ?si=fGuQowZF4gj7yx3l"/>
-            <OfficalNoTrue  title="learn react in 5 minuties"  name="Louis Crawford" views="951.2k views"   src="https://www.youtube.com/embed/LbsMZdr2wqg?si=4KzYgJZIPBTKCoHo" />
-        </div>
-        
+            <div className="section-title"> Offical Trailer </div>
+                <View />
+            <div className="section">
+                {video_users_Data.map(
+                    (data) =>(                        
+                        <OfficialCard 
+                            name={data.name}
+                            title={data.videotitle}
+                            verified={data.verified}   
+                            views={data.views}
+                            src={data.url}
+                        />
+                    ))
+                }                
+            </div>
         </>
 ); 
 }
-export default Offical_section; 
+export default OfficalSection; 
