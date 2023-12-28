@@ -1,0 +1,58 @@
+.cont2{
+    display: flex;
+}
+.container1{
+    background-color: #ffffff;
+   padding: 30px;
+   border: solid 0.5px rgba(0, 0, 0, 0.233);
+   border-radius: 5px;
+}
+.h2-1{
+    margin-bottom:30px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.A,.B,.C{
+    max-width:350px;
+    min-width: 350px;
+    margin-right:20px;
+
+}
+iframe{
+border-radius:5px;
+}
+.line1{
+    display:flex;
+    margin-top: 10px;
+}
+.line1-3{
+    font-size:13px;
+    color: rgb(67, 67, 67);
+    margin-left:120px;
+    margin-top:5px;
+}
+.line1-4{
+    font-size:13px;
+    color: rgb(67, 67, 67);
+    margin-left:90px;
+    margin-top:5px;
+}
+
+.img1{
+    border-radius:200%;
+}
+.line1-1{
+    margin-left:-10px;
+    margin-right:10px;
+}
+.line1-2 a{
+    color: #000000;
+    font-size: 15px;
+    font-weight:bold;
+
+}
+.card-text{
+    font-size:15px;
+    font-weight:bold;
+}

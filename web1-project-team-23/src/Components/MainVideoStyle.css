@@ -1,0 +1,19 @@
+.publisher-profile-pic img{
+    height: 3rem;
+    width: 3rem;
+}
+.publisher-name{
+    display: flex; 
+    align-items: center;
+    font-weight: 500;
+}
+.grey-link{
+    color: rgb(92, 92, 92);
+}
+.black-link{
+    text-decoration: none;
+    color: black;
+}
+.align-left{
+    margin-left: 31rem;
+}
