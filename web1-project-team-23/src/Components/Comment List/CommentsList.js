@@ -1,10 +1,10 @@
 import { getDocs, collection} from "firebase/firestore"
 import { useState, useEffect } from 'react';
 import db from "../../Firebase/Firebase";
-import Avatar from "../Avatar";
+import Avatar from "../MainVideoCard/Avatar";
 import CommentBody from "./CommentBody";
 import Reactions from "./CommentsReactions";
-import "../MainVideoStyle.css"
+import "../MainVideoCard/MainVideoStyle.css"
 
 async function fetchDataFromFirestore(collectionName)
 {

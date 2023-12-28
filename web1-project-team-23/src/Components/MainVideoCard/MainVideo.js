@@ -1,5 +1,7 @@
 import Avatar from "./Avatar";
 import "./MainVideoStyle.css";
+import CommentBox from "../Comment List/CommentBox";
+import CommentsList from "../Comment List/CommentsList";
 const MainVideo = () =>{
     return(
         <div className='card'>
@@ -88,7 +90,9 @@ const MainVideo = () =>{
                                 </a>
                             </li>                      
                         </ul>
-                        {/***************************************************/}
+                    {/* --------------------Saif-------------------- */}
+                        <CommentBox/>
+                        <CommentsList/>
                     </div>
                 </div>
             </div>
