@@ -3,7 +3,7 @@ import SearchButton from "./SearchButton";
 import SettingsButton from "./SettingsButton";
 import NotificationButton from "./NotificationButton";
 import Profile from './Profile';
-import ProfilePic from "D:/Programming/Web/test-react/src/Component/ProfilePic.js"
+import ProfilePic from "../ProfilePic";
 import "./NavBarStyle.css";
 const NavBar = () =>
 {
