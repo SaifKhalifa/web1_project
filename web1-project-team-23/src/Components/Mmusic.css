@@ -1,0 +1,106 @@
+
+.section{
+  display: flex;
+  flex-wrap:wrap;
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+  gap: 0.8rem;
+}
+
+.card {
+  position: relative;
+  display: flex;
+}
+
+
+
+.video::before {
+  content: attr(data-duration);
+  position: absolute;
+  background-color: rgba(10, 10, 10, 0.575);
+  color: white;
+  right: 200px;
+  bottom: 115px;
+  padding: .1em .3em;
+  border-radius: .3em;
+  font-size: .9rem;
+  
+}
+
+.like::before{
+  
+    content: '❤';
+    position: absolute;
+    background-color: rgba(10, 10, 10, 0.575);
+    color: white;
+    right: 10px;
+    bottom: 115px;
+    padding: .1em .3em;
+    border-radius: .3em;
+    font-size: 0.9em;
+  
+}
+
+
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: .5rem;
+  text-decoration: none;
+  color: black;
+}
+
+.channel-icon {
+  margin-right: .50rem;
+  border-radius: 50%;
+  width: 29px;
+  height: 29px;
+  background-color: #AAA;
+  font-size:30px;
+  
+}
+
+.video-channel-name {
+  margin-bottom: .1rem;
+  text-decoration: none;
+  transition: color 150ms;
+  
+}
+
+.video-channel-name:hover {
+  color: #111;
+  
+}
+
+.video-channel-name {
+  
+  color: #000000;
+}
+
+.video-channel-name{
+  font-weight: bold;
+}
+
+
+.section-title{
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  text-align: left;
+  margin-left: 18px;
+}
+
+
+
+/* Mmusic.css */
+
+.container {
+  display: flex;
+}
+
+.card {
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
