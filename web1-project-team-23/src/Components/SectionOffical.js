@@ -35,6 +35,7 @@ function OfficalSection () {
                 {video_users_Data.map(
                     (data) =>(                        
                         <OfficialCard 
+                            name={data.name}
                             title={data.videotitle}
                             verified={data.verified}   
                             views={data.views}
