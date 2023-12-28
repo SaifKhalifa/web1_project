@@ -1,5 +1,5 @@
 import MusicCard from "./Music" 
-import db from "../Firebase/Firebase";
+import db from "../../Firebase/Firebase";
 import { getDocs, collection} from "firebase/firestore"
 import { useState, useEffect } from 'react';
 

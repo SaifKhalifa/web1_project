@@ -1,4 +1,4 @@
-import "./Mmusic.css"
+import "../Mmusic.css"
 
 const MusicCard = (props) => {
     return (

@@ -1,5 +1,5 @@
 import Offical_section from './Components/SectionOffical';
-import Music_section from './Components/SectionMusic';
+import Music_section from './Components/Music/SectionMusic';
 
 function App() {
   return (
